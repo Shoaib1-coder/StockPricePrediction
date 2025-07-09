@@ -9,6 +9,9 @@ from statsmodels.tsa.seasonal import seasonal_decompose  # For time series decom
 import statsmodels.api as sm  # For SARIMAX model
 from statsmodels.tsa.stattools import adfuller  # For stationarity test (optional)
 from pmdarima import auto_arima # For automatic ARIMA model selection
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
+
 
 
 
