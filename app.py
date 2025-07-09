@@ -83,10 +83,14 @@ residual_fig = px.line(x=data['Date'], y=decomposition.resid, title='Residuals',
 st.plotly_chart(residual_fig)
 # Lets run the model 
 # User input for ARIMA parameters
-p = st.slider("Select the AR term (p):", 0, 5, 2)
-d = st.slider("Select the Differencing term (d):", 0, 5, 1)
-q = st.slider("Select the MA term (q):", 0, 5, 2)
-seasonal_order = st.number_input("Select the the value of seasional p:", 0,24,12)
+#p = st.slider("Select the AR term (p):", 0, 5, 2)
+#d = st.slider("Select the Differencing term (d):", 0, 5, 1)
+#q = st.slider("Select the MA term (q):", 0, 5, 2)
+#seasonal_order = st.number_input("Select the the value of seasional p:", 0,24,12)
+p=1
+d=1
+q=1
+seasonal_order=12
 
 # Fit the SARIMAX model
 model = sm.tsa.statespace.SARIMAX(data[column], 
