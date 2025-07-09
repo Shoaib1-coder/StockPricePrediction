@@ -99,7 +99,7 @@ The app uses `pmdarima.auto_arima()` to automatically find the best `(p, d, q)` 
 ## 📬 Feedback and Contributions
 
 Feel free to fork the repo, open issues, or submit pull requests.  
-For suggestions or feedback, contact: **[your-email@example.com]**
+For suggestions or feedback, contact: **[mshoaib3393@gmail.com]**
 
 ---
 
